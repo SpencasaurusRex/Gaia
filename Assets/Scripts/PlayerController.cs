@@ -1,14 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 	
 	public float Speed;
 	public float SprintModifier;
 
+	private Character character;
+
 	void Start() {
-		
+		character = new Character();
 	}
 
 	void FixedUpdate () {
