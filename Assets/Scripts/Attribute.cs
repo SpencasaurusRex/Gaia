@@ -12,8 +12,7 @@ public class Attribute {
 	private int max;
 	public int Max {
 		get {return max;}
-		set
-		{
+		set {
 			max = value;
 			if (Current > max) {
 				Current = max;
@@ -24,8 +23,7 @@ public class Attribute {
 	private float current;
 	public float Current {
 		get { return current; }
-		set 
-		{
+		set {
 			current = value;
 			if (current <= 0) {
 				current = 0;
